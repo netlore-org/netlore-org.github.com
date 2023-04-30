@@ -1,5 +1,12 @@
 # Netlore - Simple, lightweight experimental browers.
 
+## Navigation
+- [Goal and my thoughts..](#goal-and-my-thoughts)
+- [Components of Netlore](#components-of-netlore)
+- [What will I use to create it?](#what-will-i-use-to-create-it)
+- [To Do list..](#to-do-list)
+- [Documentation](#documentation)
+
 ## Goal and my thoughts..
 
 Netlore will be a simple lightweight experimental browser and web engine fully written in C. In my perspective it will be a fun and teaching project in which I can show all of my passion for programming. Writing a fully browser that is fully compatible with all new standards of web is nearly impossible by doing it for yourself, if I had a team writing it would go more smoother. My goals for netlore are simple:
@@ -82,5 +89,9 @@ What will I use while creating netlore, I can just answer C and go on with this 
         - [ ]  *SDL2*
         - [ ]  *CURL*
     - [ ]  *Build whole engine*
+
+---
+
+# Documentation
 
 ### Notion.so version [here!](https://wild-curler-b6f.notion.site/Netlore-Simple-lightweight-experimental-browers-0640eac76821466fa6ea76a22e59dd1d)
