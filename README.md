@@ -1,2 +1,2 @@
-# netlore-org.github.com
+# netlore-org.github.io
 Website for this organization
