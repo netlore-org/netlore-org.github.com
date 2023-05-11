@@ -1,48 +1,47 @@
-# Netlore - Simple, lightweight experimental browers.
+# Netlore - Simple and lightweight web engine and browser.
 
 ## Navigation
-- [Goal and my thoughts..](#goal-and-my-thoughts)
-- [Components of Netlore](#components-of-netlore)
+- [Abstract](#abstract)
+- [Goals](#goals)
+- [Components](#components)
 - [What will I use to create it?](#what-will-i-use-to-create-it)
 - [To Do list..](#to-do-list)
 - [Documentation](#documentation)
 
-## Goal and my thoughts..
+## Abstract
 
-Netlore will be a simple lightweight experimental browser and web engine fully written in C. In my perspective it will be a fun and teaching project in which I can show all of my passion for programming. Writing a fully browser that is fully compatible with all new standards of web is nearly impossible by doing it for yourself, if I had a team writing it would go more smoother. My goals for netlore are simple:
+Netlore is a simple lightweight browser and web engine written in C. Netlore is a passion project, intended to be a fun teaching tool with which I can learn about the internals of web browsers. Writing a web browser with complete support for modern web standards is nearly impossible for an individual, so that is not the goal for this project, at least with the current number of contributors. 
 
-- Be compatible with HTML 4.0
-- Get simple CSS 2.0 working or even 3.0
-- Support JavaScript engine (like NodeJS or V8)
-- Create a good looking UI
-- Write for my own HTML, CSS Parser
-- And mostly have fun!
+## Goals
 
-Did I just written a simple TODO list? Maybe but that doesn’t matter really. These are the things I want to have in Netlore, I fully understand that writing i for myself will be the biggest programming goal I can success but I fully want to have fun and try it for my self.
+- HTML 4.0 Compatibility
+- Simple CSS 2.0 (or 3.0) support
+- Support a JavaScript engine (i.e NodeJS or V8)
+- Good looking UI
+- Handwritten HTML, CSS Parser
+- Have fun!
 
 ---
 
-## Components of Netlore
+## Components
 
-Netlore will be divide in some parts, for example UI system will have other name than HTML/CSS Parser, every component will add up to netlore. Some component will be named after the names of gods in Norse mythology and others not. Here’s the full list of Netlore components. All of them will be in one repository on github: `/netlore-org/netlore`
+Netlore will by divided into various component, each of which is responsible for a part of Netlore's functionality. All components will be hosted in [this repo.](github.com/netlore-org/netlore) Here is the list of components:
 
 - **Netlore** (Browser)
     - **Bolly** (Web engine)
-        - **Heimdall** (UI & Window Manager) - Everything that want’s to be on screen need to go by Heimdall it’s a simple UI & Window Manager library
-        - **Njord** (HTML, CSS Parser) - Into Njord goes every HTML/CSS code in which it would be lexer and parsed and return a DOM element
-        - **Balder** (URL Parser) - Simple URL parser that would return a simple structure with URL
+        - **Heimdall** (UI & Window Manager) - a simple UI & Window Manager library. Handles all render calls.
+        - **Njord** (HTML, CSS Parser) - lexical scanning and parsing of HTML and CSS. returns a DOM element
+        - **Balder** (URL Parser) - URL parser that returns a simple structure with URL
         - **Loki** (Rendering Engine) - Loki would look at DOM tree and say:
             
             > “That’s pretty easy, let’s show it on the screen.. I will just call Heimdall”
             > 
-        - **Freja** (Network caller) - Component in which every HTTPS request goes by.
+        - **Freja** (Network caller) - Handles networking and requests.
     - **Fredric** (Build system.. Why would it have even a name lol?)
 
 ---
 
 ## What will I use to create it?
-
-What will I use while creating netlore, I can just answer C and go on with this text but let’s divide it in some parts.
 
 | Component type | Name | Programming Language | Libraries |
 | --- | --- | --- | --- |
